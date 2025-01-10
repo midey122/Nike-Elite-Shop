@@ -227,6 +227,10 @@ ul li a:hover {
   height: 49vh;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.455);
+  background-image: url(/images/backnike.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .down {
   display: flex;

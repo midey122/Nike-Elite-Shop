@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike E-Commerce</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/nike_logo-removebg-preview.png" alt="Nike Logo" />
+      </div>
+      <ul id="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/html/productpage.html">Products</a></li>
+        <li><a href="#newarrival">New & Featured</a></li>
+      </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()" class="hide-bar">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg></a>
+        </li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./html/productpage.html">Product</a></li>
+        <li><a href="#">New & Featured</a></li>
+        
+      </ul>
+      <div class="left-nav">
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Search ..." />
+          <div class="fa fa-search search-icon"></div>
+        </div>
+        <a href="/html/shopping.html">
+          <!-- <div id="number" class="number">0</div> -->
+          <img class="cart-img" src="./images/cart.webp" alt="Cart" />
+        </a>
+        <a onclick="showSidebar()" class="menu-button" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
+      </div>
+    
+    </nav>
+    <main>
+      <section class="product-hero">
+        <img
+          src="./images/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR (1).png"
+          alt="Nike Air Zoom Pegasus 39"
+        />
+        <div class="hero-content">
+          <h1>Nike Air Zoom Pegasus 39</h1>
+          <p>Experience the smoothest, most responsive Pegasus yet.</p>
+          <div class="price">
+            <span>$200.00</span>
+          </div>
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <button class="minus" onclick="decrementQuantity()">–</button>
+            <input type="number" id="quantity" value="1" min="1" />
+            <button class="plus" onclick="incrementQuantity()">+</button>
+          </div>
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </section>
+      <section class="product-details">
+        <h2>Product Details</h2>
+        <ul class="details-list">
+          <li>**Color:** [black]</li>
+          <li>**Style Code:** [Style code]</li>
+          <li>
+            **Material:** [Upper material] / [Midsole material] / [Outsole
+            material]
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-up">
+        <div class="foot">
+          <h4>Resources</h4>
+          <h4>Gift Cards</h4>
+          <h4>Find a Store</h4>
+          <h4>Become a Member</h4>
+          <h4>Nike X NBA</h4>
+          <h4>NIKE JOURNAL</h4>
+          <h4>Site feedback</h4>
+        </div>
+        <div class="foot">
+          <h4>Help</h4>
+          <h5>Get Help</h5>
+          <h5>Order Status</h5>
+          <h5>Shipping and Delivery</h5>
+          <h5>Returns</h5>
+          <h5>Payment Options</h5>
+          <h5>Contact Us</h5>
+          <h5>Store Locator</h5>
+        </div>
+        <div class="foot">
+          <h4>Company</h4>
+          <h5>About Us</h5>
+          <h5>Careers</h5>
+          <h5>Press</h5>
+          <h5>Corporate Responsibility</h5>
+          <h5>Investors</h5>
+        </div>
+        <div class="foot">
+          <h4>Promotions & Discounts</h4>
+          <h5>Students</h5>
+          <h5>Military</h5>
+          <h5>Teachers</h5>
+          <h5>First Responders & Medical Professionals</h5>
+          <h5>Birthdays</h5>
+        </div>
+      </div>
+      <div class="footer-down">
+        <p>Guides</p>
+        <p>Terms of Sales</p>
+        <p>Terms of Use</p>
+        <p>Nike Privacy Policy</p>
+        <p>Your Privacy Choices</p>
+      </div>
+      <h3>© 2024 Nike, Inc. All Rights Reserved</h3>
+    </footer>
+    <!-- <script src=""></script> -->
+    <script src="/js/product.js"></script>
+    <script src="/script.js"></script>
+  </body>
+  <script>
+     function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    AOS.init();
+  </script>
+</html>

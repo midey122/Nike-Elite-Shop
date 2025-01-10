@@ -1,0 +1,111 @@
+/* Style the product page layout, hero section, and product details */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+main {
+  padding-inline: 8%;
+  padding-block: 5%;
+  background-color: #ddeefc;
+  margin-inline: 7%;
+  margin-block: 3%;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+}
+.product-hero {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.product-hero img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.hero-content {
+  width: 50%;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quantity-selector label {
+  margin-right: 10px;
+}
+
+.quantity-selector input {
+  width: 40px;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  margin-inline: 10px;
+}
+
+.quantity-selector button {
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.plus {
+  margin-left: 5px;
+}
+
+.add-to-cart {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.add-to-cart:active{
+  background-color: #aab3f5;
+  color: rgb(0, 123, 123);
+}
+
+
+.product-details {
+  margin-bottom: 50px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.benefits ul {
+  margin-top: 5px;
+  padding-left: 15px;
+}

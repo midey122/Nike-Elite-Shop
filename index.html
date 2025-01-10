@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/nike_logo-removebg-preview.png" alt="Nike Logo" />
+      </div>
+      <ul id="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="/html/productpage.html">Products</a></li>
+        <li><a href="#newarrival">New & Featured</a></li>
+      </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()" class="hide-bar">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg></a>
+        </li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./html/productpage.html">Product</a></li>
+        <li><a href="#">New & Featured</a></li>
+        
+      </ul>
+      <div class="left-nav">
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Search ..." />
+          <div class="fa fa-search search-icon"></div>
+        </div>
+        <a href="/html/shopping.html">
+          <!-- <div id="number" class="number">0</div> -->
+          <img class="cart-img" src="./images/cart.webp" alt="Cart" />
+        </a>
+        <a onclick="showSidebar()" class="menu-button" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <!-- <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div> -->
+    </nav>
+
+    <section class="sect">
+      <div class="left">
+        <h1>Nike Air Zoom Pegasus 39</h1>
+        <p>
+          Experience unparalleled comfort and style with the latest Nike Air
+          Zoom Pegasus 39.
+        </p>
+      </div>
+      <div class="middle">
+        <h1 data-aos="fade-right" data-aos-duration="3000">NI</h1>
+        <div class="shoes">
+          <img
+            class="shoe1"
+            src="../images/left-removebg-preview.png"
+            alt="Left Shoe Image"
+          />
+          <img
+            class="shoe2"
+            src="../images/right-removebg-preview.png"
+            alt="Right Shoe Image"
+          />
+        </div>
+        <h1 data-aos="fade-left" data-aos-duration="3000">KE</h1>
+      </div>
+      <div class="right">
+        <div class="display">
+          <h1>Winning isn’t for everyone &#128077;</h1>
+          <p>It’s for those who do whatever it takes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos">
+      <div class="logo1">
+        <img
+          src="./images/003_005-nike-logos-jordan-black-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="logo2">
+        <img
+          src="./images/002_003-nike-logos-converse-black-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="logo3">
+        <img
+          src="./images/001_001-nike-logos-swoosh-black-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="sect-one">
+      <div class="secone-left">
+        <h1>Nike: A Legacy of Innovation and Performance</h1>
+        <p>
+          Embody the perfect fusion of performance, comfort, style, and
+          sustainability. Whether you're hitting the track, the gym, or the
+          streets, Nike ensures you do so with confidence and flair. Nike's
+          dedication to sustainability is also evident in their shoe production.
+          The company has made significant strides in using recycled materials
+          and reducing waste, reflecting their commitment to protecting the
+          environment.
+        </p>
+      </div>
+      <div class="secone-right">
+        <img src="./images/nike_shoe-removebg-preview.png" alt="" />
+      </div>
+    </section>
+
+    <section class="shop-by-section">
+      <h2>Shop By Gender</h2>
+      <div class="shop-by-container">
+        <div class="container">
+          <img src="./images/men shoe.png" alt="Norway" />
+          <div class="text-block">
+            <h4>Men</h4>
+            <a class="shop-by-link" href="/html/productpage.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./images/women shoe2.png" alt="Norway" />
+          <div class="text-block">
+            <h4>Woman</h4>
+            <a class="shop-by-link" href="/html/productpage.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./images/kids shoe 2.png" alt="Norway" />
+          <div class="text-block">
+            <h4>Kids</h4>
+            <a class="shop-by-link" href="/html/productpage.html">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sect-four">
+      <div class="secfour-right">
+        <img src="./images/hero-img4-removebg-preview.png" alt="" />
+      </div>
+      <div class="secfour-left">
+        <h1>Nike: Revolutionizing Sports Performance</h1>
+        <p>
+          Nike's influence spans across various sports, from running and
+          basketball to soccer and tennis. The company's collaborations with top
+          athletes, including LeBron James, Serena Williams, and Cristiano
+          Ronaldo, have resulted in iconic sports gear that meets the highest
+          standards of excellence. The brand supports initiatives that promote
+          physical activity, youth sports, and inclusive participation,
+          fostering a culture of health and wellness.
+        </p>
+      </div>
+    </section>
+
+    <section class="shop-by-section">
+      <h2>Shop By Sport</h2>
+      <div class="shop-by-container">
+        <div class="container">
+          <img src="./images/men sport shoe.webp" alt="Norway" />
+          <div class="text-block">
+            <h4>Football</h4>
+            <a class="shop-by-link" href="/html/productpage.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./images/women shoe.webp" alt="Norway" />
+          <div class="text-block">
+            <h4>Running</h4>
+            <a class="shop-by-link" href="/html/productpage.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            class="basketguy"
+            src="./images/basket_ballguy-removebg-preview.png"
+            alt="Norway"
+          />
+          <div class="text-block">
+            <h4>BasketBall</h4>
+            <a class="shop-by-link" href="/html/productpage.html">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-two">
+      <div class="up">
+        <div class="inner">
+          <h3>Explore Our Latest Collection</h3>
+          <p>
+            Discover the newest Nike shoes and apparel for your active lifestyle
+          </p>
+          <a href="#newarrival">
+            <button>Explore</button>
+          </a>
+        </div>
+      </div>
+      <div class="down">
+        <div class="image-slider">
+          <img class="img" src="./images/i__4_-removebg-preview.png" alt="" />
+        </div>
+        <div class="image-slider">
+          <img class="img" src="./images/i__3_-removebg-preview.png" alt="" />
+        </div>
+        <div class="image-slider">
+          <img class="img" src="./images/i__4_-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-three going">
+      <h3 id="newarrival">New Arrivals</h3>
+      <div class="all-card">
+        <a href="/html/products/product1.html">
+          <div class="card">
+            <img src="./images/air-force-1-07-mens-shoes-jBrhbr.png" alt="" />
+            <h1>Nike Air Zoom Pegasus</h1>
+            <p>Woman shoe</p>
+            <!-- <div class="images">
+            <img class="down-img" onmouseover="openCity(event, 'first')"  src="./images/air-force-1-07-mens-shoes-jBrhbr.png" alt="">
+            <img class="down-img" onmouseover="openCity(event, 'second')" src="./images/air-force-1-07-womens-shoes-b19lqD.png" alt="">
+            <img class="down-img" onmouseover="openCity(event, 'third')" src="./images/air-max-dn-shoes-27XkSQ.png" alt="">
+          </div> -->
+            <h4>$300</h4>
+          </div></a
+        >
+        <a href="/html/products/product10.html">
+          <div class="card">
+            <img src="./images/air-force-1-07-womens-shoes-b19lqD.png" alt="" />
+            <h1>Nike Free RN</h1>
+            <p>Woman shoe</p>
+            <h4>$225</h4>
+          </div>
+        </a>
+        <a href="/html/products/product2.html">
+          <div class="card">
+            <img
+              src="./images/tiempo-emerald-legend-10-elite-fg-low-top-soccer-cleats-ZP173P.png"
+              alt=""
+            />
+            <h1>Nike LeBron series</h1>
+            <p>Woman shoe</p>
+            <h4>$267</h4>
+          </div></a
+        >
+        <a href="/html/products/product3.html">
+          <div class="card">
+            <img src="./images/air-max-dn-womens-shoes-dFBSQh.png" alt="" />
+            <h1>Nike Kyrie series</h1>
+            <p>Woman shoe</p>
+            <h4>$187</h4>
+          </div>
+        </a>
+        <a href="/html/products/product4.html">
+          <div class="card">
+            <img src="./images/air-max-dn-shoes-27XkSQ.png" alt="" />
+            <h1>Nike Metcon</h1>
+            <p>Woman shoe</p>
+            <h4>$185</h4>
+          </div>
+        </a>
+        <a href="/html/products/product5.html">
+          <div class="card">
+            <img
+              src="./images/phantom-gx-2-elite-fg-low-top-soccer-cleats-lSxqH0.png"
+              alt=""
+            />
+            <h1>Nike Air Zoom SuperRep</h1>
+            <p>Woman shoe</p>
+            <h4>$250</h4>
+          </div>
+        </a>
+        <a href="/html/products/product6.html">
+          <div class="card">
+            <img src="./images/air-penny-2-mens-shoes-67X3rk.png" alt="" />
+            <h1>Nike Air Max series</h1>
+            <p>Woman shoe</p>
+            <h4>$230</h4>
+          </div>
+        </a>
+        <a href="/html/products/product7.html">
+          <div class="card">
+            <img src="./images/air-vapormax-plus-mens-shoes-nC0dzF.png" alt="" />
+            <h1>Nike React Element</h1>
+            <p>Woman shoe</p>
+            <h4>$195</h4>
+          </div>
+        </a>
+        <a href="/html/products/product8.html">
+          <div class="card">
+            <img
+              src="./images/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+              alt=""
+            />
+            <h1>Nike Mercuriale</h1>
+            <p>Woman shoe</p>
+            <h4>$215</h4>
+          </div>
+        </a>
+        <a href="/html/products/product9.html">
+          <div class="card">
+            <img
+              src="./images/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR (1).png"
+              alt=""
+            />
+            <h1>Nike Tiempo</h1>
+            <p>Woman shoe</p>
+            <h4>$200</h4>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="what">
+      <h1>Review</h1>
+      <div class="marquee-container">
+        <div class="marquee" id="first-row">
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jack"
+                alt="Jack"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Jack</figcaption>
+                <p class="review-username">@jack</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              Nike's shoes are top-notch: stylish, comfy, and durable.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="./images/man1-removebg-preview.png"
+                alt="Jack"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Paul</figcaption>
+                <p class="review-username">@paul</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              They're a go-to for both athletes and casual wearers.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jack"
+                alt="Jack"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Richard</figcaption>
+                <p class="review-username">@richard</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              Nike's footwear is a game-changer.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jack"
+                alt="Jack"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Tobi</figcaption>
+                <p class="review-username">@tobi</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              The comfort and support are unmatched, whether you're on the court
+              or strolling the streets.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jack"
+                alt="Jack"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Mark</figcaption>
+                <p class="review-username">@mark</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              The designs are iconic, making a statement with every step.
+            </blockquote>
+          </div>
+          <!-- Repeat for other reviews -->
+        </div>
+        <div class="marquee reverse" id="second-row">
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jane"
+                alt="Jane"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Ayo</figcaption>
+                <p class="review-username">@ayo</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              It's no wonder they're so popular
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jane"
+                alt="Jane"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Olamide</figcaption>
+                <p class="review-username">@olamide</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              Whether you're running, playing sports, or just hanging out, Nike
+              has a shoe for you.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jane"
+                alt="Jane"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Jane</figcaption>
+                <p class="review-username">@jane</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              They're comfortable, stylish, and built to last.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jane"
+                alt="Jane"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">Mary</figcaption>
+                <p class="review-username">@mary</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              Nike shoes are a must-have.
+            </blockquote>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-img"
+                src="https://avatar.vercel.sh/jane"
+                alt="Jane"
+              />
+              <div class="review-info">
+                <figcaption class="review-name">James</figcaption>
+                <p class="review-username">@james</p>
+              </div>
+            </div>
+            <blockquote class="review-body">
+              Nike truly delivers performance and style in every shoe.
+            </blockquote>
+          </div>
+          <!-- Repeat for other reviews -->
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <h1>FAQ Question</h1>
+      <div class="faq-all">
+        <div class="faq-question">
+          <div class="question">
+            <h3>What is Nike's return policy for online purchases?</h3>
+            <button class="toggle">-</button>
+          </div>
+          <p class="answer">
+            Nike's return policy allows you to return unworn items within 30
+            days of the shipping date for any reason. You can return items by
+            mail or at a Nike store, and Nike will provide a prepaid return
+            label for online returns. Once your return is received, Nike will
+            issue a refund to your original payment method.
+          </p>
+        </div>
+        <hr />
+        <div class="faq-question">
+          <div class="question">
+            <h3>What are Nike's most popular shoe models?</h3>
+            <button class="toggle">-</button>
+          </div>
+          <p class="answer">
+            Nike has several popular shoe models, including the Air Max series,
+            the Air Jordan series, the Nike Free series, and the Nike Roshe
+            series. Each of these lines offers different styles and features to
+            cater to various preferences and activities.
+          </p>
+        </div>
+        <hr />
+        <div class="faq-question">
+          <div class="question">
+            <h3>Does Nike offer customization options for their shoes?</h3>
+            <button class="toggle">-</button>
+          </div>
+          <p class="answer">
+            Yes, Nike offers customization options for some of their shoe models
+            through their Nike By You (previously known as NikeiD) program.
+            Customers can personalize select shoes by choosing different colors,
+            materials, and even adding custom text or graphics. This allows you
+            to create a unique pair of Nike shoes tailored to your style and
+            preferences.
+          </p>
+        </div>
+        <hr />
+        <div class="faq-question">
+          <div class="question">
+            <h3>
+              How can I find my correct shoe size when shopping for Nike shoes
+              online?
+            </h3>
+            <button class="toggle">-</button>
+          </div>
+          <p class="answer">
+            Nike provides a size chart on their website to help you determine
+            your correct shoe size. You can measure your foot length and width
+            and then use the size chart to find the corresponding Nike shoe
+            size. It's also a good idea to read reviews and consider ordering a
+            half size up if you're unsure, as shoe sizing can vary between
+            brands.
+          </p>
+        </div>
+        <hr />
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </section>
+    <footer>
+      <div class="footer-up">
+        <div class="foot">
+          <h4>Resources</h4>
+          <h4>Gift Cards</h4>
+          <h4>Find a Store</h4>
+          <h4>Become a Member</h4>
+          <h4>Nike X NBA</h4>
+          <h4>NIKE JOURNAL</h4>
+          <h4>Site feedback</h4>
+        </div>
+        <div class="foot">
+          <h4>Help</h4>
+          <h5>Get Help</h5>
+          <h5>Order Status</h5>
+          <h5>Shipping and Delivery</h5>
+          <h5>Returns</h5>
+          <h5>Payment Options</h5>
+          <h5>Contact Us</h5>
+          <h5>Store Locator</h5>
+        </div>
+        <div class="foot">
+          <h4>Company</h4>
+          <h5>About Us</h5>
+          <h5>Careers</h5>
+          <h5>Press</h5>
+          <h5>Corporate Responsibility</h5>
+          <h5>Investors</h5>
+        </div>
+        <div class="foot">
+          <h4>Promotions & Discounts</h4>
+          <h5>Students</h5>
+          <h5>Military</h5>
+          <h5>Teachers</h5>
+          <h5>First Responders & Medical Professionals</h5>
+          <h5>Birthdays</h5>
+        </div>
+      </div>
+      <div class="footer-down">
+        <p>Guides</p>
+        <p>Terms of Sales</p>
+        <p>Terms of Use</p>
+        <p>Nike Privacy Policy</p>
+        <p>Your Privacy Choices</p>
+      </div>
+      <h3>© 2024 Nike, Inc. All Rights Reserved</h3>
+    </footer>
+  </body>
+  <script src="/script.js"></script>
+  <script src="/js/slider.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+     function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    AOS.init();
+  </script>
+</html>

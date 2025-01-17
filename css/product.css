@@ -1,5 +1,5 @@
 /* Style the product page layout, hero section, and product details */
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -85,11 +85,10 @@ main {
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
-.add-to-cart:active{
+.add-to-cart:active {
   background-color: #aab3f5;
   color: rgb(0, 123, 123);
 }
-
 
 .product-details {
   margin-bottom: 50px;
@@ -108,4 +107,45 @@ main {
 .benefits ul {
   margin-top: 5px;
   padding-left: 15px;
+}
+@media screen and (max-width: 850px) {
+  main {
+    padding-inline: 5%;
+  }
+  .product-hero img {
+    width: 45%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 730px) {
+  main {
+    padding-inline: 3%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .product-hero {
+    flex-direction: column;
+    width: 100%;
+  }
+  .product-hero img {
+    width: 100%;
+  }
+  .hero-content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content p {
+    font-size: medium;
+  }
+  .product-details h2 {
+    font-size: 1.5rem;
+  }
+  .details-list li{
+    font-size: 14px;
+  }
 }

@@ -206,7 +206,7 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card-item__cover {
   height: 100%;
@@ -282,10 +282,10 @@ body {
 .card-item__typeImg {
   max-width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-height: 100%;
   -o-object-position: top right;
-     object-position: top right;
+  object-position: top right;
 }
 .card-item__info {
   color: #fff;
@@ -320,8 +320,8 @@ body {
   height: 100%;
   text-shadow: 7px 6px 10px rgba(14, 42, 90, 0.8);
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 @media screen and (max-width: 480px) {
   .card-item__wrapper {
@@ -520,8 +520,8 @@ body {
   width: 100%;
   display: block;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .card-input__input {
   width: 100%;
@@ -536,7 +536,8 @@ body {
   color: #1a3b5d;
   font-family: "Source Sans Pro", sans-serif;
 }
-.card-input__input:hover, .card-input__input:focus {
+.card-input__input:hover,
+.card-input__input:focus {
   border-color: #3d9cff;
 }
 .card-input__input:focus {
@@ -629,4 +630,4 @@ body {
     transform: scale(1.1);
     box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
-}/*# sourceMappingURL=checkout.css.map */
+} /*# sourceMappingURL=checkout.css.map */
